@@ -34,13 +34,13 @@ function setEvalTextVisible(visiblePlayer: "white" | "black") {
     if (visiblePlayer === "white") {
         whiteEvalText.setAttribute("visibility", boardFlipped ? "hidden" : "visible");
         blackEvalText.setAttribute("visibility", boardFlipped ? "visible" : "hidden");
-        whiteEvalText.setAttribute("fill", boardFlipped ? "#fff" : "#000");
-        blackEvalText.setAttribute("fill", boardFlipped ? "#000" : "#fff");
+        whiteEvalText.setAttribute("fill", boardFlipped ? "#fff" : "#403d39");
+        blackEvalText.setAttribute("fill", boardFlipped ? "#403d39" : "#fff");
     } else {
         whiteEvalText.setAttribute("visibility", boardFlipped ? "visible" : "hidden");
         blackEvalText.setAttribute("visibility", boardFlipped ? "hidden" : "visible");
-        whiteEvalText.setAttribute("fill", boardFlipped ? "#000" : "#fff");
-        blackEvalText.setAttribute("fill", boardFlipped ? "#fff" : "#000");
+        whiteEvalText.setAttribute("fill", boardFlipped ? "#000" : "#403d39");
+        blackEvalText.setAttribute("fill", boardFlipped ? "#403d39" : "#000");
     }
 }
 
@@ -88,12 +88,12 @@ async function drawEvaluationBar(evaluation: Evaluation, boardFlipped: boolean, 
     if (boardFlipped) {
         whiteEvalText.setAttribute("fill", "#fff");
         blackEvalText.setAttribute("fill", "#000");
-        whiteRect.setAttribute("fill", "#000000");
+        whiteRect.setAttribute("fill", "#403d39");
         blackRect.setAttribute("fill", "#ffffff");
     } else {
         whiteEvalText.setAttribute("fill", "#000");
         blackEvalText.setAttribute("fill", "#fff");
         whiteRect.setAttribute("fill", "#ffffff");
-        blackRect.setAttribute("fill", "#000000");
+        blackRect.setAttribute("fill", "#403d39");
     }
 }

@@ -85,10 +85,10 @@ function drawArrow(fromX: number, fromY: number, toX: number, toY: number, width
 
     return arrowCtx.canvas;
 }
-
-async function drawBoard(fen: string) {
+// Change so you can enter any color for the board
+async function drawBoard(fen: string, lightColor: string = "#f0f1f0", darkColor: string = "#c4d8e4") {
     // Draw surface of board
-    let colours = ["#f6dfc0", "#b88767"];
+    let colours = [lightColor, darkColor];
 
     for (let y = 0; y < 8; y++) {
         for (let x = 0; x < 8; x++) {
